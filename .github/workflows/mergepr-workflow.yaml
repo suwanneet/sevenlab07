@@ -20,7 +20,7 @@ jobs:
               working-directory: ./src
               run: go test ./...
 
-    code-coverage:
+code-coverage:
         name: Code Coverage
         runs-on: ubuntu-latest
         steps:
@@ -44,7 +44,7 @@ jobs:
               with:
                 name: code-coverage-report
                 path: src/coverage.txt
-    code-vuln-scan:
+code-vuln-scan:
         name: Code Vulnerability Scan
         runs-on: ubuntu-latest
         steps:
